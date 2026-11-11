@@ -1,0 +1,1 @@
+The two tiny RAR fixtures come from the libarchive test suite: https://github.com/libarchive/libarchive/tree/master/libarchive/test. They contain the text `test text document` and exercise regular files, directories, and a contained symbolic link. The associated license is preserved in LICENSE-libarchive.txt.

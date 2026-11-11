@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+app_dir="$(dirname -- "$(readlink -f -- "$0")")"
+exec /usr/bin/python "$app_dir/main.py" "$@"

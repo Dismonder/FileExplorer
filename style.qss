@@ -1,0 +1,151 @@
+* { font-family: "Segoe UI", "Noto Sans"; font-size: 13px; color: $text; }
+QMainWindow, #shell { background: $window; }
+#shell { border: 1px solid $outline; border-radius: 8px; }
+QToolTip { background: $panel; color: $text; border: 1px solid $border; padding: 7px; border-radius: 4px; }
+QLabel#dropHint { background: $panel; color: $text; border: 1px solid $border; padding: 6px 10px; border-radius: 6px; font-weight: 600; }
+QWidget { outline: none; }
+QPushButton, QToolButton { border: 1px solid transparent; border-radius: 4px; padding: 6px; background: transparent; }
+QPushButton:hover, QToolButton:hover { background: $hover; }
+QPushButton:pressed, QToolButton:pressed { background: $pressed; }
+QPushButton:disabled, QToolButton:disabled { color: $disabled; }
+QToolButton#crumbArrow { padding: 0; border-radius: 4px; }
+QPushButton:checked, QToolButton:checked { background: $border; }
+QPushButton:focus-visible, QToolButton:focus-visible { border: 1px solid $focus; }
+#titlebar { background: transparent; }
+#windowClose { border-radius: 0; }
+#windowClose:hover { background: #e81123; }
+QTabBar { background: transparent; }
+QTabBar::tab { background: transparent; border: 0; border-radius: 7px; padding: 9px 14px; min-width: 160px; max-width: 210px; margin: 6px 2px 0 2px; text-align: left; }
+QTabBar::tab:selected { background: $panel; }
+QTabBar::tab:!selected:hover { background: $hover; }
+QTabBar::close-button { image: none; width: 16px; height: 16px; }
+#navigation { background: $panel; border-bottom: 1px solid $border; }
+#addressBox, #searchBox { background: $surface; border: 1px solid $border; border-bottom: 1px solid $border; border-radius: 4px; }
+#addressBox:focus-within, #searchBox:focus-within { border-bottom: 2px solid $accent; }
+QLineEdit { background: $surface; border: 1px solid $border; border-radius: 4px; padding: 7px; selection-background-color: $selection_border; }
+#addressEdit, #searchEdit { background: transparent; border: 0; padding: 5px; }
+#searchEdit { font-size: 12px; }
+#commandbar { background: $panel; border-bottom: 1px solid $border; }
+#separator { background: $separator; max-width: 1px; margin-top: 12px; margin-bottom: 12px; }
+#sidebar { background: $window; border: 0; border-right: 1px solid $border; }
+#sidebarScroll, #sidebarScroll > QWidget > QWidget { background: $window; }
+#navItem { border-radius: 4px; padding: 0; text-align: left; }
+#navItem:hover { background: $border; }
+#navItem[active="true"] { background: $hover; }
+#navMark { background: transparent; border-radius: 2px; }
+#navItem[active="true"] #navMark { background: $accent; }
+#navLabel { background: transparent; }
+#navDivider { background: $separator; max-height: 1px; }
+#page, #home, #computer, #gallery, #fileViews { background: $surface; }
+QScrollArea { border: 0; background: $surface; }
+QScrollArea > QWidget > QWidget { background: $surface; }
+#sectionTitle { font-size: 14px; font-weight: 600; }
+#folderCard { border: 1px solid transparent; border-radius: 4px; background: transparent; text-align: left; }
+#folderCard:hover { background: $window; border-color: $hover; }
+#folderCard:focus { background: $selection; border-color: $selection_border; }
+#muted { color: $muted; font-size: 12px; }
+#homeTabs { background: $surface; border-bottom: 1px solid $border; }
+#homeTabs QPushButton { border-radius: 0; padding: 10px 4px; margin-right: 22px; }
+#homeTabs QPushButton:checked { background: transparent; border-bottom: 2px solid $accent; font-weight: 600; }
+QTreeView, QListView, QTreeWidget { border: 0; background: $surface; alternate-background-color: $surface; selection-background-color: $selection; selection-color: $text; padding: 0; }
+QTreeView::item { height: 33px; padding: 0 6px; border: 1px solid transparent; }
+QTreeView::item:hover, QListView::item:hover { background: $hover; border-radius: 3px; }
+QTreeView::item:selected, QListView::item:selected { background: $selection; border: 1px solid $selection_border; border-radius: 3px; color: $text; }
+QListView::item { padding: 7px; border: 1px solid transparent; border-radius: 4px; }
+QHeaderView { background: $surface; }
+QHeaderView::section { background: $surface; border: 0; border-right: 1px solid $border; border-bottom: 1px solid $border; padding: 7px 10px; font-size: 12px; color: $header; text-align: left; }
+QHeaderView::section:hover { background: $hover; }
+QTreeView::branch { background: transparent; }
+#statusbar { background: $panel; border-top: 1px solid $border; }
+#statusText { font-size: 12px; color: $status; }
+#detailsPane, #previewPane { background: $panel; border-left: 1px solid $border; }
+#detailsTitle { font-size: 20px; font-weight: 600; }
+#empty { color: $muted; padding: 30px; }
+QMenu { background: $menu; border: 1px solid $outline; border-radius: 8px; padding: 4px; }
+QMenu::item { padding: 7px 36px 7px 12px; border-radius: 4px; margin: 1px 2px; min-width: 200px; }
+QMenu::item:selected { background: $hover; }
+QMenu::item:disabled { color: $disabled; }
+QMenu::icon { padding-left: 10px; }
+QMenu::indicator { width: 14px; height: 14px; margin-left: 8px; }
+QMenu::right-arrow { margin-right: 8px; }
+QMenu::separator { height: 1px; background: $separator; margin: 3px 10px; }
+#menuIconRow { background: transparent; }
+#menuIconButton { border-radius: 4px; }
+#menuIconButton:hover { background: $hover; }
+#menuIconButton:pressed { background: $pressed; }
+QScrollBar:vertical { background: transparent; width: 10px; margin: 3px 1px; }
+QScrollBar::handle:vertical { background: $scroll; min-height: 35px; border-radius: 4px; margin: 2px; }
+QScrollBar::handle:vertical:hover { background: $scroll_hover; }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0; }
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { background: transparent; }
+QScrollBar:horizontal { background: transparent; height: 10px; }
+QScrollBar::handle:horizontal { background: $scroll; min-width: 35px; border-radius: 4px; margin: 2px; }
+QScrollBar::add-line:horizontal, QScrollBar::sub-line:horizontal { width: 0; }
+QSplitter::handle { background: $border; width: 1px; }
+QProgressBar { border: 1px solid $border; border-radius: 1px; background: $progress; height: 12px; text-align: center; }
+QProgressBar::chunk { background: $fill; }
+QDialog, QMessageBox, QInputDialog { background: $panel; }
+QDialog QPushButton { background: $surface; border: 1px solid $border; min-width: 76px; padding: 7px 14px; }
+#propertiesDialog { background: $panel; }
+#propertiesDialog QTabWidget::pane { border: 1px solid $border; background: $surface; border-radius: 4px; top: -1px; }
+#propertiesDialog QTabBar::tab { min-width: 88px; max-width: none; margin: 0; padding: 8px 13px; border-radius: 4px 4px 0 0; }
+#propertiesDialog QTabBar::tab:selected { background: $surface; border: 1px solid $border; border-bottom-color: $surface; font-weight: 600; }
+#propertiesDialog QLineEdit { min-height: 19px; }
+QCheckBox { spacing: 7px; padding: 4px; }
+QCheckBox::indicator { width: 17px; height: 17px; border: 1px solid $focus; border-radius: 3px; background: $surface; }
+QCheckBox::indicator:checked { background: $accent; border-color: $accent; }
+#terminal { background: $surface; border-top: 1px solid $border; }
+#terminalOutput, #terminalInput, #terminalPrompt { font-family: "JetBrains Mono", "Noto Sans Mono", monospace; font-size: 12px; background: $surface; color: $text; border: 0; border-radius: 0; }
+#terminalPrompt { padding-left: 6px; }
+#terminalInput { padding: 4px; }
+#textPreview { font-family: "JetBrains Mono", "Noto Sans Mono", monospace; font-size: 11px; color: $muted; }
+#page[activePane="true"] QTreeView, #page[activePane="true"] QListView { border: 1px solid $accent; }
+#page[activePane="false"] QTreeView, #page[activePane="false"] QListView { border: 1px solid transparent; }
+#searchSummary { color: $muted; background: $panel; border-bottom: 1px solid $border; }
+#shareTarget { text-align: left; padding: 8px 12px; border: 1px solid $border; border-radius: 6px; background: $surface; }
+#shareTarget:hover { background: $hover; }
+#shareTarget:pressed { background: $pressed; }
+#shareUrl { font-family: "JetBrains Mono", "Noto Sans Mono", monospace; }
+#dragHandle { border: 2px dashed $accent; border-radius: 8px; background: $panel; color: $text; padding: 10px; }
+#dragHandle:hover { background: $hover; }
+#settingsTop { background: $surface; border-bottom: 1px solid $border; }
+#settingsTitle { font-size: 26px; font-weight: 600; }
+#settingsSearch { min-height: 34px; border-radius: 6px; padding-left: 12px; }
+#settingsSidebar { background: $panel; border: 1px solid $border; border-radius: 8px; }
+#settingsNav { text-align: left; padding: 8px 10px; border: 1px solid transparent; border-left: 3px solid transparent; border-radius: 6px; }
+#settingsNav:hover { background: $hover; }
+#settingsNav:checked { background: $selection; border-left: 3px solid $accent; font-weight: 600; }
+#settingsAvatar { background: $accent; color: $surface; border-radius: 21px; font-size: 19px; font-weight: 600; }
+#settingsName { font-weight: 600; }
+#settingsPageTitle { font-size: 24px; font-weight: 600; }
+#settingsStack { background: $surface; }
+#settingsCard { background: $panel; border: 1px solid $border; border-radius: 8px; }
+#settingsCard:hover { border-color: $focus; }
+#settingsCardIcon { background: transparent; border: none; }
+#settingsCardTitle { font-size: 14px; font-weight: 600; }
+#settingsCard QComboBox, #settingsCard QPushButton { min-width: 125px; }
+#settingsSwitch { spacing: 8px; }
+#settingsCard QPushButton { background: $surface; border: 1px solid $border; border-radius: 6px; padding: 8px 14px; }
+#settingsCard QPushButton:hover { background: $hover; border-color: $focus; }
+#settingsCard QComboBox { background: $surface; border: 1px solid $border; border-radius: 6px; padding: 8px 28px 8px 10px; }
+#settingsCard QComboBox:hover { border-color: $focus; }
+#settingsSwitch { min-width: 92px; padding: 7px 10px; border-radius: 16px; background: $border; }
+#settingsSwitch:checked { background: $accent; color: $surface; }
+#settingsBack { padding: 0; border-radius: 18px; }
+#settingsBack:hover { background: $hover; }
+#settingsHero, #settingsQuick { background: $panel; border: 1px solid $border; border-radius: 10px; }
+#settingsHeroTitle { font-size: 17px; font-weight: 600; }
+#settingsSectionTitle { font-size: 15px; font-weight: 600; }
+#settingsStat { background: $panel; border: 1px solid $border; border-radius: 8px; }
+#settingsStatValue { font-weight: 600; }
+#settingsValue { min-width: 42px; color: $muted; }
+#settingsToggle { background: $surface; border: 1px solid $border; border-radius: 7px; padding: 8px 12px; }
+#settingsToggle:hover { background: $hover; }
+#settingsToggle:checked { background: $selection; border-color: $accent; }
+#settingsToggle:disabled { color: $disabled; }
+#settingsCard QSlider::groove:horizontal { height: 4px; background: $border; border-radius: 2px; }
+#settingsCard QSlider::handle:horizontal { width: 16px; height: 16px; margin: -6px 0; border-radius: 8px; background: $accent; }
+#settingsQuick QSlider::groove:horizontal { height: 4px; background: $border; border-radius: 2px; }
+#settingsQuick QSlider::sub-page:horizontal { background: $accent; border-radius: 2px; }
+#settingsQuick QSlider::add-page:horizontal { background: $border; border-radius: 2px; }
+#settingsQuick QSlider::handle:horizontal { width: 18px; margin: -7px 0; border-radius: 9px; background: $accent; }
